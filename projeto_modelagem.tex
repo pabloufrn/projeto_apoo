@@ -1,0 +1,697 @@
+% ------------------------
+% Declaração do documento |
+% ------------------------
+\documentclass{article}
+% ----------------------------
+% Pacotes usados no documento |
+% ----------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[left=2cm,top=2cm,right=3cm,bottom=3cm]{geometry}
+\usepackage[ampersand]{easylist}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{indentfirst}
+\usepackage{float}
+\usepackage[portuguese]{babel}
+\usepackage{ifthen}
+% ---------------------
+% Customizações gerais |
+% ---------------------
+\newcounter{rncounter}
+\newcounter{cscounter}
+\renewcommand{\arraystretch}{2}
+% --------------------
+% Ambientes           |
+% --------------------
+\newcommand{\sumario}[1] {\textbf{Sumário:} #1\\ }
+\newcommand{\ator}[1] {\textbf{Ator Primário:} #1\\}
+\newcommand{\precond}[1] {\textbf{Precondições:} #1\\}
+\newcommand{\regras}{\textbf{Regras de negócio: }}
+\newcommand{\fluxo}{\textbf{Fluxo Principal:}}
+\newcommand{\diagrama}[2]
+{
+ \begin{figure}[H]
+ \begin{center}
+ \includegraphics[width=\textwidth]{#1.png}
+ \end{center}
+ \caption{#2}
+ \label{fig:#1}
+ \end{figure}
+}
+\newcommand{\telasmart}[2]
+{
+ \begin{figure}[H]
+ \begin{center}
+ \includegraphics[scale=0.3]{#1.png}
+ \end{center}
+ \caption{#2}
+ \label{fig:#1}
+ \end{figure}
+}
+
+\newenvironment{fluxoa}[2]
+	{
+		\textbf{Fluxo Alternativo (#1): #2}
+		\begin{enumerate}[itemsep=0mm, label=(\alph*)]			
+	}
+	{
+		\end{enumerate}			
+	}
+\newenvironment{fluxoe}[2]
+	{
+		\textbf{Fluxo de Exceção (#1): #2}
+		\begin{enumerate}[itemsep=0mm, label=(\alph*)]			
+	}
+	{
+		\end{enumerate}			
+	}
+
+\newenvironment{casosdeuso}[1]
+{
+ \stepcounter{cscounter}
+ \begin{center}
+ \begin{tabular}{|p{\textwidth}|}
+ \hline
+ \begin{center}
+ \large \textbf{#1 (CSU\ifnum\value{cscounter}<10 0\fi\arabic{cscounter})}
+ \end{center}
+}
+{ 
+ \\\\\hline
+ \end{tabular} 
+ \end{center}
+}
+    
+\newenvironment{rnegocio}[1]
+{
+ \stepcounter{rncounter}
+
+ \begin{center}
+ \begin{tabular}{|l|p{0.8\linewidth}|}
+ \hline
+ \multicolumn{2}{|p{\textwidth}|}
+ {
+  \large \textbf{#1 (RN\ifnum\value{rncounter}<10 0\fi\arabic{rncounter})}
+ } \\
+ \hline
+ Descrição & 
+}
+{
+ \\ \hline
+ \end{tabular} 
+ \end{center}
+}
+
+
+% --------------------
+% Inicio do documento |
+% --------------------
+\begin{document}
+% ----------------------
+%          Capa         |
+% ----------------------
+\begin{titlepage} %iniciando a "capa"
+\begin{center} %centralizar o texto abaixo
+{\large Universidade Federal do Rio Grande do Norte }\\[0.2cm] %0,2cm é a distância entre o texto dessa linha e o texto da próxima
+{\large Instituto Metrópole Digital}\\[0.2cm] % o comando \\ "manda" o texto ir para próxima linha
+{\large Bacharelado em Tecnologia da Informação}\\[0.2cm]
+{\large Análise e Projeto Orientado a Objetos}\\[5.1cm]
+{\bf \huge Modelagem de Projeto}\\[5.1cm] % o comando \bf deixa o texto entre chaves em negrito. O comando \huge deixa o texto enorme
+\end{center} %término do comando centralizar
+{\large Aluno: Pablo Emanuell Lopes Targino}\\[0.7cm] % o comando \large deixa o texto grande
+{\large Professor: Leonardo Cunha de Miranda}\\[5.1cm]
+\begin{center}
+{\large Natal}\\[0.2cm]
+{\large 2018}
+\end{center}
+\end{titlepage} 
+% ----------------------
+%          Corpo        |
+% ----------------------
+\section{Introdução}
+
+A modelagem de projeto tem o objetivo de fazer a estrutura básica de construção de um Software. São diversas técnicas utilizadas para cada fase de projeto. Esse documento contém os artefatos de software produzidos na fase de análise de projeto de um sistema de software orientado a objetos.
+
+O sistema proposto é um aplicativo de divulgação de eventos e estabelecimento, onde pessoas podem criar anúncios que podem ser vistos pelo usuário e compartilhados em grupos. O objetivo principal é que o usuário do aplicativo tenha oportunidade de utilizar um software que pode recomendar lugares para sair e se divertir na sua cidade e no seu bairro.
+
+\section{Descrição do projeto com as telas do sistema} 
+
+A ideia consiste em projetar um aplicativo de divulgação de eventos e novos estabelecimentos, por meio de cadastros feitos pelo usuário.
+
+O aplicativo foi feito pensando em pessoas que não sabem lugares para sair (Ex.: novos moradores de um determinado local), tem um smartphone e tem acesso à internet. Assim essas pessoas tem fácil acesso a esse tipo de informação, evitando que seja gasto tempo procurando em ferramentas diversas que não são especificas para tal finalidade.
+
+O ambiente de uso do aplicativo é um lugar qualquer, já que basta ter acesso à internet para usufruir da ferramenta.
+
+Para desenhar as interfaces utilizei o Balsamiq, um software para construção de protótipos de baixa fidelidade.
+
+Quando o usuário assumi o papel de divulgador de eventos/estabelecimentos, suas atribuições são:\medskip
+\begin{easylist}[itemize]
+& Divulgar um evento/estabelecimento.
+& Gerenciar seu(s) eventos/estabelecimento.
+& Ver histórico de eventos realizados por ele.
+\end{easylist}\medskip
+Ao divulgar um evento/estabelecimento o usuário deve dizer o que quer divulgar e fornecer o nome do evento, o horário, a localização, uma imagem do evento, uma indicação se o evento é público ou privado e, opcionalmente, observações sobre o evento. As telas que ele usurá para fazer isso serão parecidas com essa:
+
+\telasmart{tela_cadastro_evento}{Tela de cadastro de evento ou estabelecimento.}
+
+Ao final do procedimento o evento estará disponível para que os outros usuários que tenham acesso a ele vejam e possam sinalizar sua participação e compartilhar o evento.
+
+Uma vez divulgado o evento ele poderá ser gerenciado - cancelado ou editado. A tela para gerenciar o estabelecimento será a mesma usada para gerenciar os eventos. Veja o protótipo na figura \ref{fig:gerenciar_evento}:
+
+\telasmart{gerenciar_evento}{Telas de edição de evento e de  estabelecimento.}
+
+A quantidade de eventos de cada tipo que cada usuário pode cadastrar se encontra nas regras de negócio  RN02 e RN03 na seção 4 desse documento.
+
+O histórico de eventos realizados pelo divulgador estará disponível ao divulgar seu primeiro evento. Ao acessar esse menu, o usuário poderá ver todas as informações do eventos que já realizou. A tela onde as duas últimas operações serão ativadas será um menu drop-down que será apresentado junto com as operações do papel a seguir. A tela do histórico em si é essa:
+
+\telasmart{eventos_criados}{Tela de histórico de eventos realizados por usuário.}
+
+Os eventos divulgados no sistema serão usados por pessoas que estão procurando lugares para sair, nesse papel as atribuições do usuário serão as seguintes:\medskip
+\begin{easylist}[itemize]
+& Ver eventos disponíveis na região.
+& Favoritar categorias de evento.
+& Ver agenda de eventos.
+& Ver histórico de eventos.
+\end{easylist}\medskip
+
+Antes de apresentar as próximas telas é importante ressaltar onde boa parte dos recursos do aplicativo serão engatilhados, esse lugar é um menu acordeão (dropdown) que está disponível na tela principal do App. A figura que mostra esse menu é:
+
+\telasmart{menu_home}{Menu com várias operações do sistema.}
+
+A opção minha conta já tem protótipo definido, mas ela não será mostrada ainda, por se tratar de uma funcionalidade que pode ser projetada posteriormente para se adaptar ao nível do sistema nas próximas fases.
+
+Para ver os eventos, o usuário se utilizará de um mapa com coordenadas pré-configuradas para seu local (ou para o evento mais próximo). Os pontos no mapa, possivelmente, terão o mesmo tamanho, pois não queremos que um evento seja mais chamativo que outro. Os eventos que apareceram nesse tela são delimitados pela regra de negócio RN05:
+
+\telasmart{mapa}{Mapa de eventos de interesse do usuário}			
+
+As categorias favoritas vão servir para cada usuário ser notificado de eventos recentes que eles poderiam gostar. Na aba principal ele poderá ver todas as categorias e marcar as que ele mais gosta, como pode ser visto na imagem: 
+
+\telasmart{fav}{Tela principal com as categorias}
+
+Como o aplicativo é de eventos,  é natural que o usuário queira ter alguma maneira de se lembrar de onde tem que ir. Para isso iremos dispor de uma agenda que conterá as datas do eventos que ele marcou presença. Além disso o aplicativo irá disparar uma notificação em determinado tempo antes do evento. A tela será baseado no protótipo abaixo:
+
+\telasmart{agenda}{Agenda de eventos do usuário}
+
+Também é comum que uma pessoa queira se lembrar de onde ela foi determinado dia, essa funcionalidade estará disponível no sistema. A imagem abaixo demonstra como isso será feito:
+
+\telasmart{hist_eventos}{Histórico de eventos que o usuário participou (Lembranças).}
+ 
+\section{Casos de uso} \bigskip
+
+Os casos de uso foram feitos com base no recursos essenciais do sistema, o diagrama foi feito utilizando a ferramenta Astah. O DCU está contido na imagem da próxima página.
+
+\diagrama{usecase}{Diagrama de casos de uso.}
+\pagebreak
+
+Alguns casos de uso estão documentados usando uma descrição numerada extendida com grau de detalhamento essencial, isso tudo está descrito abaixo: 
+
+\begin{casosdeuso}{Divulgar evento}
+ \sumario{Usuário cadastra um novo evento ao sistema.}
+ \ator{Divulgador.}
+ \precond{Usuário está autentificado.}
+\fluxo
+\begin{enumerate}[itemsep=0mm]
+ \item Usuário solicita o cadastro de um novo evento.
+ \item Sistema exibe formulário de cadastramento.
+ \item Usuário fornece os dados necessários.
+ \item Sistema cadastra novo evento e o caso de uso termina.
+\end{enumerate}
+
+\begin{fluxoe}{2}{Violação de RN02} 
+ \item Se o usuário não pode mais criar eventos, o sistema reporta o fato e retorna para a tela anterior ao cadastro.
+\end{fluxoe}
+\end{casosdeuso}
+
+\begin{casosdeuso}{Gerenciar eventos}
+ \sumario{Usuário consulta eventos criados por ele.}
+ \ator{Divulgador.}
+ \precond{Usuário está autentificado e já criou no mínimo um evento.}
+\fluxo
+\begin{enumerate}[itemsep=0mm]
+ \item Usuário solicita ao sistema eventos criados por ele.
+ \item Sistema exibi uma lista de eventos cadastrados pelo usuário.
+ \item Usuário seleciona um dos eventos.
+ \item Sistema exibe as informações sobre o evento.
+ \item Usuário observa, cancela ou edita as informações e o caso de uso termina.\bigskip
+\end{enumerate}
+\begin{fluxoa}{5}{Notificação de alteração de evento}
+ \item Conforme RN01, os usuário que marcaram participação serão notificados da alteração.
+\end{fluxoa}
+\end{casosdeuso}
+
+\begin{casosdeuso}{Ver histórico de eventos}
+ \sumario{Usuário acessa informações sobre eventos que ele realizou.}
+ \ator{Divulgador}
+ \precond{Usuário está autentificado e já criou no mínimo um evento.}
+\fluxo
+\begin{enumerate}[itemsep=0mm]
+ \item Usuário solicita ao sistema eventos já realizados por ele.
+ \item Sistema exibi lista de eventos.
+ \item Usuário seleciona um dos eventos.
+ \item Sistema exibe as informações sobre o evento.
+ \item Usuário visualiza as informações e o caso de uso termina.
+\end{enumerate}
+\end{casosdeuso}
+
+\begin{casosdeuso}{Participar de  eventos}
+ \sumario{Usuário visualiza eventos próximos a ele.}
+ \ator{Usuário procurando eventos.}
+ \precond{Usuário está autentificado e existem eventos próximos a ele.}
+\fluxo
+\begin{enumerate}[itemsep=0mm]
+ \item Usuário solicita eventos na proximidade.
+ \item Sistema exibe os eventos próximos.
+ \item Usuário escolhe um dos eventos.
+ \item Sistema exibe informações sobre o evento.
+ \item Usuário decide se vai participar do evento.
+ \item Sistema cadastra participação no evento, se o usuário desejar, e o caso de uso termina.\bigskip
+\end{enumerate}
+\end{casosdeuso}
+
+\begin{casosdeuso}{Ver agenda}
+ \sumario{Usuário visualiza agenda mensal com eventos marcados.}
+ \ator{Usuário procurando eventos.}
+ \precond{Usuário está autentificado.}
+ \fluxo
+\begin{enumerate}[itemsep=0mm]
+ \item Usuário solicita eventos marcados com participação.
+ \item Sistema exibe calendário com datas de participação em um evento.
+ \item Usuário seleciona um data.
+ \item Sistema exibi lista com eventos que o usuário participa.
+ \item Usuário visualiza os eventos e o caso de uso termina.
+\end{enumerate}
+\end{casosdeuso}
+
+\begin{casosdeuso}{Criar grupo}
+ \sumario{Usuário cria um grupo para compartilhar eventos}
+ \ator{Usuário padrão }
+ \precond{Usuário está autentificado.}
+\fluxo
+\begin{enumerate}[itemsep=0mm]
+ \item Usuário solicita criação do grupo.
+ \item Sistema exibe formulário com informações exigidas.
+ \item Usuário fornece as informações.
+ \item Sistema cadastra o grupo e o caso de uso termina.
+\end{enumerate}
+\end{casosdeuso}
+
+\begin{casosdeuso}{Gerenciar grupo}
+ \sumario{Usuário edita informações do grupo.}
+ \ator{Administrador de grupo.}
+ \precond{Usuário está autentificado e é adminstrador do grupo.}
+\fluxo
+\begin{enumerate}[itemsep=0mm]
+ \item Usuário solicita lista de grupos em que ele participa.
+ \item Sistema exibe os grupos.
+ \item Usuário seleciona grupo em que ele é adminstrador.
+ \item Sistema exibe informações do grupo
+ \item Usuário faz alterações no grupo.
+ \item Sistema registra as operações e o caso de uso termina.
+\end{enumerate}
+\end{casosdeuso}
+
+\begin{casosdeuso}{Gerenciar categorias}
+ \sumario{Adminstrador do sistema cadastra ou edita categorias.}
+ \ator{Administrador do sistema.}
+ \precond{Usuário está autentificado e é adminstrador do sistema.}
+\fluxo
+\begin{enumerate}[itemsep=0mm]
+ \item Administrador solicita lista de categoria.
+ \item Sistema exibe todas as categorias.
+ \item Usuário seleciona uma categoria e informa o que quer fazer com ela.
+ \item Sistema cadastra as alterações e o caso de uso termina.
+\end{enumerate}
+\end{casosdeuso}
+
+\section{Regras de negócio} 
+
+\par As regras de negócio também foram feitas, mas a maior parte delas ainda não foi pensada. As regras podem ser conferidas abaixo:
+
+\begin{rnegocio}{Cancelamento ou alteração de evento}
+Ao editar ou cancelar um evento todos os usuários participantes serão notificados.
+\end{rnegocio}
+
+\begin{rnegocio}{Restrição do número de eventos}
+Cada usuário só pode cadastrar 2 eventos ao mesmo tempo.
+\end{rnegocio}
+
+\begin{rnegocio}{Restrição do número de estabelecimentos}
+Cada usuário só pode divulgar um estabelecimento.
+\end{rnegocio}
+
+\begin{rnegocio}{Restrição de local do evento}
+Ao criar um evento em um local que já foi criado, o sistema irá gerar um alerta notificando que já existe um evento naquele ambiente.
+\end{rnegocio}
+
+\begin{rnegocio}{Restrição de eventos no mapa}
+Os eventos que aparecem no mapa pertecem às categorias favoritados e obedecem a um raio de alcance determinado pelo usuário.
+\end{rnegocio}
+
+\begin{rnegocio}{Restrição de horário de funcionamento}
+Um estabelecimento pode ter no máximo 4 horários de funcionamento.
+\end{rnegocio}
+
+\begin{rnegocio}{Restrição sobre conteúdo publicado no grupo}
+O administrador do grupo pode restringir a categoria dos eventos publicados no grupo.
+\end{rnegocio}
+
+	\section{Classes de domínio} \bigskip
+As classes de domínio do sistema foram feitas com base nos casos de uso e para suportar as regras de negócio, a única exceção são os relacionamentos todo-parte que podem ser lidos dos dois lados - Ex.: Um evento tem vários participantes e um usuário participa de vários eventos. Além disso ainda não foi definido o login, pois ainda será decidido as informações necessárias. O diagrama irá ser corrigido em um novo ciclo de analise de projeto. O diagrama pode ser visto na figura \ref{fig:Diagrama}.
+ 
+\diagrama{Diagrama}{Diagrama de classes do sistema.} 
+
+\pagebreak
+
+As classes não foram formadas a partir da identificação dirigida ás responsabilidades, no entanto, isso ajudou na identificação ou concretização das classes. Os cartões CRC podem ser conferidos abaixo:
+
+		\begin{center}
+   	 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
+\hline
+ 	\multicolumn{2}{|p{\textwidth}|}{
+{\large \textbf{Usuário}}
+}  \\
+\hline
+\textbf{Responsabilidades} & \textbf{Colaboradores} \\ 
+\hline
+  	Saber seu nome &  Anúncio \\
+  	\hline
+  	Divulgar e gerenciar Anúncios & Evento \\
+  	\hline
+  	Ver histórico de eventos & Categoria \\
+  	\hline
+  	Ver histórico de divulgações & Agenda \\
+  	\hline
+  	Ver e Participar de eventos & Local \\
+  	\hline
+  	Gerenciar categorias favoritas & Grupo \\
+  	\hline
+  	Ver agenda &  AdminGrupo \\
+  	\hline
+  	Saber seu local &  Membro \\ 
+  	\hline
+  	Criar e gerenciar um grupo &  Estabelecimento \\
+\hline
+Saber seu login & Login \\
+\hline
+Denunciar Anúncio & Denúncia \\			  
+    \hline
+   	\end{tabular} 
+    \end{center}
+    
+    % ----------------------------
+    
+    \begin{center}
+   	 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
+\hline
+ 	\multicolumn{2}{|p{\textwidth}|}{
+{\large \textbf{Anúncio}}
+}  \\
+\hline
+\textbf{Responsabilidades} & \textbf{Colaboradores} \\ 
+\hline
+  	Saber seu título & Local  \\
+  	\hline
+  	Saber sua descrição & Evento \\
+  	\hline
+  	Saber seu local & Estabelecimento \\
+  	\hline
+  	Saber seu tipo & Categoria \\
+  	\hline
+  	Saber sua categoria &   \\
+  	\hline
+   	\end{tabular} 
+    \end{center}
+    
+     % ----------------------------
+    
+    \begin{center}
+   	 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
+\hline
+ 	\multicolumn{2}{|p{\textwidth}|}{
+{\large \textbf{Evento}}
+}  \\
+\hline
+\textbf{Responsabilidades} & \textbf{Colaboradores} \\ 
+\hline
+  	Saber sua data & Data \\
+  	\hline
+  	Saber seu horário &  Horário\\
+  	\hline
+  	Saber seus participantes &  Usuário \\
+  	\hline
+  	Saber seu anunciante &  \\
+  	\hline
+   	\end{tabular} 
+    \end{center}
+    
+    % ----------------------------
+    
+    \begin{center}
+   	 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
+\hline
+ 	\multicolumn{2}{|p{\textwidth}|}{
+{\large \textbf{Local}}
+}  \\
+\hline
+\textbf{Responsabilidades} & \textbf{Colaboradores} \\ 
+\hline
+  	Saber sua cidade &  \\
+  	\hline
+  	Saber sua rua &  \\
+  	\hline
+  	Saber seu número &  \\
+  	\hline
+  	Saber seu nome &  \\
+  	\hline
+   	\end{tabular} 
+    \end{center}
+    
+    % ----------------------------
+    
+    \begin{center}
+   	 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
+\hline
+ 	\multicolumn{2}{|p{\textwidth}|}{
+{\large \textbf{Data}}
+}  \\
+\hline
+\textbf{Responsabilidades} & \textbf{Colaboradores} \\ 
+\hline
+  	Saber seu dia &  \\
+  	\hline
+  	Saber seu mês &  \\
+  	\hline
+  	Saber seu ano &  \\
+  	\hline
+   	\end{tabular} 
+    \end{center}
+    
+    % ----------------------------
+    
+    \begin{center}
+   	 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
+\hline
+ 	\multicolumn{2}{|p{\textwidth}|}{
+{\large \textbf{Horário}}
+}  \\
+\hline
+\textbf{Responsabilidades} & \textbf{Colaboradores} \\ 
+\hline
+  	Saber suas horas &  \\
+  	\hline
+  	Saber seus minutos &  \\
+  	\hline
+  	Saber seus segundos &  \\
+  	\hline
+   	\end{tabular} 
+    \end{center}
+    
+    % ----------------------------
+    
+    \begin{center}
+   	 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
+\hline
+ 	\multicolumn{2}{|p{\textwidth}|}{
+{\large \textbf{Estabelecimento}}
+}  \\
+\hline
+\textbf{Responsabilidades} & \textbf{Colaboradores} \\ 
+\hline
+  	Saber seu horário de funcionamento &  HorárioFuncionamento \\
+  	\hline
+  	Saber seu anunciante & Usuário \\
+  	\hline
+   	\end{tabular} 
+    \end{center}
+    
+     % ----------------------------
+    
+    \begin{center}
+   	 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
+\hline
+ 	\multicolumn{2}{|p{\textwidth}|}{
+{\large \textbf{HorárioFuncionamento}}
+}  \\
+\hline
+\textbf{Responsabilidades} & \textbf{Colaboradores} \\ 
+\hline
+  	Saber seus dias de funcionamento & Horário \\
+  	\hline
+  	Saber seu horário de abertura &  \\
+  	\hline
+  	Saber seu horário de fechamento &  \\
+  	\hline
+   	\end{tabular} 
+    \end{center}
+    
+    % ----------------------------
+    
+    \begin{center}
+   	 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
+\hline
+ 	\multicolumn{2}{|p{\textwidth}|}{
+{\large \textbf{Categoria}}
+}  \\
+\hline
+\textbf{Responsabilidades} & \textbf{Colaboradores} \\ 
+\hline
+  	Saber seu nome &  \\
+  	\hline
+   	\end{tabular} 
+    \end{center}
+    
+    % ----------------------------
+    
+    \begin{center}
+   	 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
+\hline
+ 	\multicolumn{2}{|p{\textwidth}|}{
+{\large \textbf{Agenda}}
+}  \\
+\hline
+\textbf{Responsabilidades} & \textbf{Colaboradores} \\ 
+\hline
+  	Saber seus eventos & Evento \\
+  	\hline
+   	\end{tabular} 
+    \end{center}
+    
+     % ----------------------------
+    
+    \begin{center}
+   	 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
+\hline
+ 	\multicolumn{2}{|p{\textwidth}|}{
+{\large \textbf{Grupo}}
+}  \\
+\hline
+\textbf{Responsabilidades} & \textbf{Colaboradores} \\ 
+\hline
+  	Saber seus membros & Membro \\
+  	\hline
+  	Saber seus administradores & AdminGrupo \\
+  	\hline
+   	\end{tabular} 
+    \end{center}
+    
+    % ----------------------------
+    
+    \begin{center}
+   	 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
+\hline
+ 	\multicolumn{2}{|p{\textwidth}|}{
+{\large \textbf{Membro}}
+}  \\
+\hline
+\textbf{Responsabilidades} & \textbf{Colaboradores} \\ 
+\hline
+  	Postar anúncio & Anúncio \\
+  	\hline
+  	Sair do grupo & Grupo \\
+  	\hline
+   	\end{tabular} 
+    \end{center}
+    
+    % ----------------------------
+    
+    \begin{center}
+   	 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
+\hline
+ 	\multicolumn{2}{|p{\textwidth}|}{
+{\large \textbf{AdminGrupo}}
+}  \\
+\hline
+\textbf{Responsabilidades} & \textbf{Colaboradores} \\ 
+\hline
+  	Gerenciar membros & Membro \\
+  	\hline
+  	Nomear admin para o grupo & Admin \\
+  	\hline
+  	Escolher conteúdo do grupo & Grupo \\
+  	\hline
+   	\end{tabular} 
+    \end{center}
+    
+    % ----------------------------
+    
+    \begin{center}
+   	 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
+\hline
+ 	\multicolumn{2}{|p{\textwidth}|}{
+{\large \textbf{Login}}
+}  \\
+\hline
+\textbf{Responsabilidades} & \textbf{Colaboradores} \\ 
+\hline
+  	Saber sua credencial & Credencial \\
+  	\hline
+   	\end{tabular} 
+    \end{center}
+    
+    % ----------------------------
+    
+    \begin{center}
+   	 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
+\hline
+ 	\multicolumn{2}{|p{\textwidth}|}{
+{\large \textbf{Denúncia}}
+}  \\
+\hline
+\textbf{Responsabilidades} & \textbf{Colaboradores} \\ 
+\hline
+  	Saber seu motivo &  Data \\
+  	\hline
+  	Saber sua data &  Horário \\
+  	\hline
+  	Saber seu horário &  Anúncio \\
+  	\hline
+  	Saber seu anuncio denunciado & Usuário \\
+  	\hline
+  	Saber seu denunciante &  \\
+  	\hline
+   	\end{tabular} 
+    \end{center}
+    
+\section{Glossário de conceitos}
+    
+\begin{enumerate}[label=\textbf{\arabic*}]
+\item \textbf{Usuário:} usuário do aplicativo.
+\item \textbf{Anúncio:} divulgação de evento ou estabelecimento.
+\item \textbf{Evento:} tipo de divulgação permitida.
+\item \textbf{Local:} Endereço de um lugar.
+\item \textbf{Data:} dia, mês e ano de um acontecimento.
+\item \textbf{Horário:} horas e minutos de um acontecimento.
+\item \textbf{Estabelecimento:} comercio, instituição ou outro tipo de entidade que pode reunir pessoas.
+\item \textbf{Horário de funcionamento:} horário que um estabelecimento permanece aberto em certos dias da semana.
+\item \textbf{Categoria:} Forma de rotular os anúncios para o usuário.
+\item \textbf{Agenda:} Tela que reúne o conjunto de eventos que o usuário quer participar em cada data.
+\item \textbf{Grupo:} Ferramenta que reúne usuários para compartilhar anúncios de determinadas categorias.
+\item \textbf{Notificador:} Sistema responsável pelas notificações de email ou push que obedece ordens com data e horário determinados.
+\item \textbf{AdminApp} Pessoa responsável por gerenciar as características do sistema - não necessariamente um usuário.
+\item \textbf{Preferencias:} Configurações de um determinado grupos.
+\item \textbf{Membro:} usuário que pertence a algum grupo.
+\item \textbf{Postagem:} Anúncio com texto compartilhado em um grupo.
+\item \textbf{AdminGrupo} usuário responsável por gerenciar um grupo.
+\item \textbf{Denúncia:} Relato de abuso feito por um usuário para um anúncio.
+\end{enumerate}
+\end{document}
