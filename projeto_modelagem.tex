@@ -229,8 +229,15 @@ Alguns casos de uso estão documentados usando uma descrição numerada extendid
  \item Usuário informa que quer criar um evento
  \item Sistema exibe formulário pedindo as informações que descrevem o evento.
  \item Usuário preenche as informações e solicita o envio do formulário.
- \item Sistema cadastra novo evento e o caso de uso termina.
+ \item Sistema pergunta a categoria do evento.
+ \item Usuário escolhe a categoria.
+ \item Sistema cadastra novo evento, notifica usuários próximos e o caso de uso termina.
 \end{enumerate}
+\begin{fluxoe}{3}{Violação de RN02}
+ \item Em caso de violação de RN02, o sistema irá alertar o usuário e interromper a operação. \end{fluxoe}
+\begin{fluxoe}{3}{Violação de RN04}
+ \item Em caso de violação de RN04, o sistema irá alertar o usuário e interromper a operação. \end{fluxoe}
+
 \end{casosdeuso}
 
 \begin{casosdeuso}{Adicionar membros}
@@ -317,6 +324,8 @@ Alguns casos de uso estão documentados usando uma descrição numerada extendid
  \item Usuário solicita criação do grupo.
  \item Sistema exibe formulário com informações exigidas na criação do grupos.
  \item Usuário fornece as informações.
+ \item Sistema pergunta quais categorias serão permitidas.
+ \item Usuário seleciona as categorias e confirma.
  \item Sistema exibe tela para adicionar membros com campo para colocar o nome do usuário e botão para adicionar mais um.
  \item Usuário cadastra todos os membros e solicita a confirmação ao sistema.
  \item Sistema cadastra o grupo e notifica os todos os membros e o caso de uso termina.
@@ -374,6 +383,24 @@ Alguns casos de uso estão documentados usando uma descrição numerada extendid
 \end{enumerate}
 \end{casosdeuso}
 
+\begin{casosdeuso}{Excluir Anúncio}
+ \sumario{Administrador do aplicativo exclui anúncio.}
+ \ator{Administrador do aplicativo.}
+ \precond{Usuário está autentificado e é administrador do aplicativo.}
+\fluxo
+\begin{enumerate}[itemsep=0mm]
+ \item Admin solicita listagem de anúncios.
+ \item Sistema retorna a lista.
+ \item Admin seleciona o anúncio.
+ \item Sistema apresenta operações possíveis.
+ \item Admin escolhe excluir o anúncio.
+ \item Sistema remove o anúncio do sistema e o caso de uso termina.
+\end{enumerate}
+\begin{fluxoe}{6}{Politica de RN09}
+\item O anunciante deverá ser alertado e em caso de o anúncio ser um evento, de acordo com RN09, Todos os participantes serão notificados.
+\end{fluxoe}
+\end{casosdeuso}
+
 \section{Regras de negócio} 
 
 \par As regras de negócio também foram feitas, mas a maior parte delas ainda não foi pensada. As regras podem ser conferidas abaixo:
@@ -408,6 +435,10 @@ O administrador do grupo pode restringir a categoria dos eventos publicados no g
 
 \begin{rnegocio}{Politica de exclusão de categoria}
 Ao excluir uma categoria, o administrador terá que escolher uma outra na qual todos os eventos pertencentes à categoria antiga deverão ser vinculados.
+\end{rnegocio}
+
+\begin{rnegocio}{Politica de exclusão de Anúncio}
+Ao excluir um Anúncio de qualquer tipo, o dono deverá ser notificado. Se o tipo do anúncio for um evento todos os participantes serão notificados, e as postagens feitas com o anúncio indicarão que o o evento foi excluído.
 \end{rnegocio}
 
 	\section{Classes de domínio} \bigskip
