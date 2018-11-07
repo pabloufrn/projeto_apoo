@@ -213,11 +213,11 @@ Os casos de uso foram feitos com base no recursos essenciais do sistema, o diagr
 	\diagrama{usecase23}{Diagrama do modulo de grupos.}
 	
 \textcolor{red}{
-	Como pode ser visto, também foi removido o ator sistema de notificação, pois o que ele faz não é importante nessa fase de projeto.
-}
+	Como pode ser visto, também foi removido o ator sistema de notificação pois ele não precisa ser representado como ator para entender o funcionamento do sistema.
 
-Alguns casos de uso estão documentados usando uma descrição numerada extendida com grau de detalhamento essencial, isso tudo está descrito abaixo: 
-
+Alguns casos de uso estão documentados usando uma descrição numerada extendida com grau de detalhamento essencial, isso tudo está descrito abaixo:
+} 
+\textcolor{red}{
 \begin{casosdeuso}{Divulgar evento}
  \sumario{Usuário cadastra um novo evento ao sistema.}
  \ator{Divulgador.}
@@ -237,9 +237,10 @@ Alguns casos de uso estão documentados usando uma descrição numerada extendid
  \item Em caso de violação de RN02, o sistema irá alertar o usuário e interromper a operação. \end{fluxoe}
 \begin{fluxoe}{3}{Violação de RN04}
  \item Em caso de violação de RN04, o sistema irá alertar o usuário e interromper a operação. \end{fluxoe}
-
 \end{casosdeuso}
+}
 
+\textcolor{red}{
 \begin{casosdeuso}{Adicionar membros}
  \sumario{O administrador do grupo coloca mais pessoas para participar dele.}
  \ator{Administrador de grupos.}
@@ -259,7 +260,9 @@ Alguns casos de uso estão documentados usando uma descrição numerada extendid
  \item Se o membro já pertence ao grupo, o sistema notificará ao usuário. 
 \end{fluxoe}
 \end{casosdeuso}
+}
 
+\textcolor{red}{
 \begin{casosdeuso}{Editar evento}
  \sumario{Usuário altera as informações de um evento.}
  \ator{Divulgador.}
@@ -279,7 +282,9 @@ Alguns casos de uso estão documentados usando uma descrição numerada extendid
  \item Conforme RN01, os usuário que marcaram participação serão notificados da alteração.
 \end{fluxoa}
 \end{casosdeuso}
+}
 
+\textcolor{red}{
 \begin{casosdeuso}{Participar de  eventos}
  \sumario{Usuário visualiza eventos próximos a ele.}
  \ator{Usuário procurando eventos.}
@@ -298,7 +303,10 @@ Alguns casos de uso estão documentados usando uma descrição numerada extendid
  \item Se o usuário clicar no botão de participação nessa condição, o sistema irá perguntar se ele deseja cancelar a participação no evento.
  \end{fluxoe} 
 \end{casosdeuso}
+}
 
+
+\textcolor{red}{
 \begin{casosdeuso}{Ver agenda}
  \sumario{Usuário visualiza agenda mensal com eventos marcados.}
  \ator{Usuário procurando eventos.}
@@ -314,7 +322,9 @@ Alguns casos de uso estão documentados usando uma descrição numerada extendid
  \item Usuário voltar e o caso de uso voltar para o item 4 ou o caso de uso termina
 \end{enumerate}
 \end{casosdeuso}
+}
 
+\textcolor{red}{
 \begin{casosdeuso}{Criar grupo}
  \sumario{Usuário cria um grupo para compartilhar eventos}
  \ator{Dono de grupo}
@@ -331,7 +341,9 @@ Alguns casos de uso estão documentados usando uma descrição numerada extendid
  \item Sistema cadastra o grupo e notifica os todos os membros e o caso de uso termina.
 \end{enumerate}
 \end{casosdeuso}
+}
 
+\textcolor{red}{
 \begin{casosdeuso}{Excluir grupo}
  \sumario{Usuário deleta grupo.}
  \ator{Dono de grupo.}
@@ -348,7 +360,9 @@ Alguns casos de uso estão documentados usando uma descrição numerada extendid
  \item Sistema remove o grupo e todos as postagens, notifica todos os membros e o caso de uso termina.
 \end{enumerate}
 \end{casosdeuso}
+} 
  
+\textcolor{red}{
 \begin{casosdeuso}{Excluir categoria}
  \sumario{Administrador do sistema excluí uma categoria.}
  \ator{Administrador do sistema.}
@@ -365,7 +379,9 @@ Alguns casos de uso estão documentados usando uma descrição numerada extendid
   \item Para cada Anuncio pertencente à categoria antiga, o sistema substituirá para a categoria nova.
   \end{fluxoa}
 \end{casosdeuso}
+}
 
+\textcolor{red}{
 \begin{casosdeuso}{Postar}
  \sumario{Membro cria postagem mostrando um evento.}
  \ator{Membro do grupo.}
@@ -382,7 +398,9 @@ Alguns casos de uso estão documentados usando uma descrição numerada extendid
  \item Sistema cria postagem nos grupos selecionados, notifica seus respectivos membros e o caso de uso termina.
 \end{enumerate}
 \end{casosdeuso}
+}
 
+\textcolor{red}{
 \begin{casosdeuso}{Excluir Anúncio}
  \sumario{Administrador do aplicativo exclui anúncio.}
  \ator{Administrador do aplicativo.}
@@ -400,6 +418,7 @@ Alguns casos de uso estão documentados usando uma descrição numerada extendid
 \item O anunciante deverá ser alertado e em caso de o anúncio ser um evento, de acordo com RN09, Todos os participantes serão notificados.
 \end{fluxoe}
 \end{casosdeuso}
+}
 
 \section{Regras de negócio} 
 
@@ -442,14 +461,30 @@ Ao excluir um Anúncio de qualquer tipo, o dono deverá ser notificado. Se o tip
 \end{rnegocio}
 
 	\section{Classes de domínio} \bigskip
-As classes de domínio do sistema foram feitas com base nos casos de uso e para suportar as regras de negócio, a única exceção são os relacionamentos todo-parte que podem ser lidos dos dois lados - Ex.: Um evento tem vários participantes e um usuário participa de vários eventos. Além disso ainda não foi definido o login, pois ainda será decidido as informações necessárias. O diagrama irá ser corrigido em um novo ciclo de analise de projeto. O diagrama pode ser visto na figura \ref{fig:Diagrama}.
+\textcolor{red}{As classes de domínio do sistema foram feitas com base nos casos de uso e para suportar as regras de negócio. 
+Foram removidas diversas coisas e alteradas durante o novo ciclo de analise. O diagrama pode ser visto na figura \ref{fig:Diagrama}}.
  
 \diagrama{Diagrama}{Diagrama de classes do sistema.} 
 
+Além desse digrama de classes, foram feitos 8 VCP'S para os 8 dos casos de uso apresentados. A maior dificuldade foi achar casos de uso que interajam com muitas classes, isso aconteceu porque o sistema foi pensando em 2 partes diferentes: os grupos, os anúncios.
+Todos os vcp's se encontram nas imagens a seguir: 
+
+
+\diagrama{vcp_adicionarmembros}{VCP para o caso de uso adicionar membros.}
+\diagrama{vcp_criargrupo}{VCP para o caso de uso criar grupo}
+\diagrama{vcp_editarevento}{VCP para o caso de uso editar evento.}
+\diagrama{vcp_excluircategoria}{VCP para o caso de uso excluir categoria.}
+\diagrama{vcp_excluirgrupo}{VCP para o caso de uso excluir grupo.}
+\diagrama{vcp_participarevento}{VCP para o caso de uso participar evento.}
+\diagrama{vcp_postar}{VCP para o caso de uso postar.}
+\diagrama{vpc_divulgarevento}{VCP para o caso de uso divulgar evento.}
+
 \pagebreak
+
 
 As classes não foram formadas a partir da identificação dirigida ás responsabilidades, no entanto, isso ajudou na identificação ou concretização das classes. Os cartões CRC podem ser conferidos abaixo:
 
+\textcolor{red}{
 \begin{center}
  \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
   \hline
@@ -476,9 +511,9 @@ As classes não foram formadas a partir da identificação dirigida ás responsa
   \hline
  \end{tabular} 
 \end{center}
-    
+}
     % ----------------------------
-    
+\textcolor{red}{
     \begin{center}
    	 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
 \hline
@@ -496,9 +531,10 @@ As classes não foram formadas a partir da identificação dirigida ás responsa
   	\hline
    	\end{tabular} 
     \end{center}
+}
     
      % ----------------------------
-    
+\textcolor{red}{
     \begin{center}
    	 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
 \hline
@@ -516,9 +552,9 @@ As classes não foram formadas a partir da identificação dirigida ás responsa
   	\hline
    	\end{tabular} 
     \end{center}
-    
+}
     % ----------------------------
-    
+\textcolor{red}{
     \begin{center}
    	 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
 \hline
@@ -534,9 +570,9 @@ As classes não foram formadas a partir da identificação dirigida ás responsa
   	\hline
    	\end{tabular} 
     \end{center}
-    
+}
     % ----------------------------
-    
+\textcolor{red}{
     \begin{center}
    	 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
 \hline
@@ -550,9 +586,9 @@ As classes não foram formadas a partir da identificação dirigida ás responsa
   	\hline
    	\end{tabular} 
     \end{center}
-    
+}
     % ----------------------------
-    
+\textcolor{red}{
     \begin{center}
    	 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
 \hline
@@ -566,9 +602,9 @@ As classes não foram formadas a partir da identificação dirigida ás responsa
   	\hline
    	\end{tabular} 
     \end{center}
-    
+}
      % ----------------------------
-    
+\textcolor{red}{
     \begin{center}
    	 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
 \hline
@@ -586,9 +622,9 @@ As classes não foram formadas a partir da identificação dirigida ás responsa
   	\hline
    	\end{tabular} 
     \end{center}
-    
+}
     % ----------------------------
-    
+\textcolor{red}{
     \begin{center}
    	 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
 \hline
@@ -610,9 +646,9 @@ As classes não foram formadas a partir da identificação dirigida ás responsa
   	\hline
    	\end{tabular} 
     \end{center}
-    
+}
     % ----------------------------
-    
+\textcolor{red}{
 \begin{center}
  \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
   \hline
@@ -630,11 +666,32 @@ As classes não foram formadas a partir da identificação dirigida ás responsa
   Saber sua data & Horário \\
   \hline
   Saber seu horário &  \\
-  \hline
- 
+  \hline 
  \end{tabular} 
 \end{center}
-    
+}
+
+\section{Diagramas de interação}
+
+Para os 8 casos de uso escolhidos para as VCPS também foram feitos os diagramas de sequencia e comunicação. Seguindo na sequencia: 2 diagramas de comunicação exclusivos, 2 diagramas de sequencia exclusivos, 4 pares de diagrama de sequencia e comunicação:
+
+\diagrama{com_criargrupo1}{Diagrama de comunicação do caso de uso criar grupos}
+\diagrama{com_excluirCategoria1}{Diagrama de comunicação do caso de uso excluir categoria}
+\diagrama{seq_adicionarmembros1}{Diagrama de sequencia do caso de uso adicionar membros}
+\diagrama{seq_excluirgrupo1}{Diagrama de sequencia do caso de uso excluir grupo}
+
+\diagrama{com_divulgarevento2}{Diagrama de comunicação do caso de uso divulgar evento}
+\diagrama{seq_divulgarevento2}{Diagrama de sequencia do caso de uso divulgar evento}
+
+\diagrama{com_editarevento2}{Diagrama de comunicação do caso de uso editar evento}
+\diagrama{seq_editarevento2}{Diagrama de sequencia do caso de uso evento}
+
+\diagrama{com_participarevento2}{Diagrama de comunicação do caso de uso participar de evento}
+\diagrama{seq_participarevento2}{Diagrama de sequencia do caso de uso participar de evento}
+
+\diagrama{com_postar2}{Diagrama de comunicação do caso de uso postar}
+\diagrama{seq_postar2}{Diagrama de sequencia do caso de uso postar}
+
 \section{Glossário de conceitos}
     
 \begin{enumerate}[label=\textbf{\arabic*}]

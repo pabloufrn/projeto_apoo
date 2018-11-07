@@ -1,0 +1,686 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.8.15)  7 NOV 2018 08:28
+entering extended mode
+**./projeto_modelagem.tex
+(projeto_modelagem.tex
+LaTeX2e <2018-04-01> patch level 5
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) ("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.st
+y"
+Package: inputenc 2018/04/06 v1.3b Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+)
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
+sty"
+Package: geometry 2018/04/16 v5.8 Page Geometry
+
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.st
+y"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.s
+ty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.
+sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.
+sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks17
+
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
+cfg"))
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\easylist\easylist.
+sty"
+Package: easylist 2014/01/11 v.1.4 Numbered items with a single command.
+\el@CounterTotal=\count91
+\el@Scratch=\count92
+\el@ControlCounter=\count93
+\el@CounterLevel=\count94
+\c@List1=\count95
+\c@List2=\count96
+\c@List3=\count97
+\c@List4=\count98
+\c@List5=\count99
+\c@List6=\count100
+\c@List7=\count101
+\c@List8=\count102
+\c@List9=\count103
+\c@List10=\count104
+\el@ProgressiveDimension=\dimen111
+\el@CounterBox=\box26
+\el@ControlBox=\box27
+\el@TotalMargin=\dimen112
+\el@LeftMove=\dimen113
+)
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
+sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.
+sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graph
+ics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdfte
+x.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen114
+\Gin@req@width=\dimen115
+)
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\enumitem.
+sty"
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip43
+\enit@outerparindent=\dimen116
+\enit@toks=\toks18
+\enit@inbox=\box28
+\enitdp@description=\count105
+)
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\indentfirst.
+sty"
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count106
+\float@exts=\toks19
+\float@box=\box29
+\@float@everytoks=\toks20
+\@floatcapt=\box30
+)
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2018/06/05 3.22 The Babel package
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.def
+"
+File: switch.def 2018/06/05 3.22 Babel switching mechanism
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-portuges\por
+tuges.ldf"
+Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
+
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2018/06/05 3.22 Babel common definitions
+\babel@savecnt=\count107
+\U@D=\dimen117
+
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel.d
+ef")
+\bbl@dirlevel=\count108
+)
+Package babel Info: Making " an active character on input line 145.
+))
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color
+.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+\c@rncounter=\count109
+\c@cscounter=\count110
+ (projeto_modelagem.aux)
+\openout1 = `projeto_modelagem.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 472.03123pt, 85.35826pt)
+* v-part:(T,H,B)=(56.9055pt, 652.70622pt, 85.35826pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=472.03123pt
+* \textheight=652.70622pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
+ii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count111
+\scratchdimen=\dimen118
+\scratchbox=\box31
+\nofMPsegments=\count112
+\nofMParguments=\count113
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count114
+\MPscratchDim=\dimen119
+\MPnumerator=\count115
+\makeMPintoPDFobject=\count116
+\everyMPtoPDFconversion=\toks22
+)
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
+base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infware
+rr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.st
+y"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdefin
+ekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds
+.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions
+.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetke
+ys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcmd
+s.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluate
+x.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftexc
+mds.sty"
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 122--124
+
+ []
+
+[1
+
+{C:/Users/Pablo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 150.
+
+
+("C:\Users\Pablo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 150.
+<tela_cadastro_evento.png, id=7, 856.19875pt x 735.74875pt>
+File: tela_cadastro_evento.png Graphic file (type png)
+<use tela_cadastro_evento.png>
+Package pdftex.def Info: tela_cadastro_evento.png  used on input line 156.
+(pdftex.def)             Requested size: 256.8616pt x 220.72632pt.
+
+[1 <./tela_cadastro_evento.png>]
+<gerenciar_evento.png, id=15, 1315.91624pt x 733.74126pt>
+File: gerenciar_evento.png Graphic file (type png)
+<use gerenciar_evento.png>
+Package pdftex.def Info: gerenciar_evento.png  used on input line 162.
+(pdftex.def)             Requested size: 394.77792pt x 220.12407pt.
+<eventos_criados.png, id=16, 357.335pt x 727.71875pt>
+File: eventos_criados.png Graphic file (type png)
+<use eventos_criados.png>
+Package pdftex.def Info: eventos_criados.png  used on input line 168.
+(pdftex.def)             Requested size: 107.20132pt x 218.3173pt.
+ [2 <./gerenciar_evento.png>]
+<menu_home.png, id=21, 357.335pt x 727.71875pt>
+File: menu_home.png Graphic file (type png)
+<use menu_home.png>
+Package pdftex.def Info: menu_home.png  used on input line 180.
+(pdftex.def)             Requested size: 107.20132pt x 218.3173pt.
+ [3 <./eventos_criados.png>]
+<mapa.png, id=26, 357.335pt x 727.71875pt>
+File: mapa.png Graphic file (type png)
+<use mapa.png>
+Package pdftex.def Info: mapa.png  used on input line 186.
+(pdftex.def)             Requested size: 107.20132pt x 218.3173pt.
+<fav.png, id=27, 357.335pt x 727.71875pt>
+File: fav.png Graphic file (type png)
+<use fav.png>
+Package pdftex.def Info: fav.png  used on input line 190.
+(pdftex.def)             Requested size: 107.20132pt x 218.3173pt.
+ [4 <./menu_home.png> <./mapa.png>]
+<agenda.png, id=33, 357.335pt x 727.71875pt>
+File: agenda.png Graphic file (type png)
+<use agenda.png>
+Package pdftex.def Info: agenda.png  used on input line 194.
+(pdftex.def)             Requested size: 107.20132pt x 218.3173pt.
+<hist_eventos.png, id=34, 838.13126pt x 735.74875pt>
+File: hist_eventos.png Graphic file (type png)
+<use hist_eventos.png>
+Package pdftex.def Info: hist_eventos.png  used on input line 198.
+(pdftex.def)             Requested size: 251.44131pt x 220.72632pt.
+ [5 <./fav.png> <./agenda.png>]
+<usecase.png, id=40, 689.57625pt x 895.84688pt>
+File: usecase.png Graphic file (type png)
+<use usecase.png>
+Package pdftex.def Info: usecase.png  used on input line 204.
+(pdftex.def)             Requested size: 472.03123pt x 613.22766pt.
+
+[6 <./hist_eventos.png>] [7 <./usecase.png>]
+<usecase2.png, id=50, 479.54156pt x 272.51813pt>
+File: usecase2.png Graphic file (type png)
+<use usecase2.png>
+Package pdftex.def Info: usecase2.png  used on input line 210.
+(pdftex.def)             Requested size: 472.03123pt x 268.25105pt.
+<usecase21.png, id=51, 912.40875pt x 337.26pt>
+File: usecase21.png Graphic file (type png)
+<use usecase21.png>
+Package pdftex.def Info: usecase21.png  used on input line 211.
+(pdftex.def)             Requested size: 472.03123pt x 174.47562pt.
+<usecase22.png, id=52, 548.80031pt x 440.39531pt>
+File: usecase22.png Graphic file (type png)
+<use usecase22.png>
+Package pdftex.def Info: usecase22.png  used on input line 212.
+(pdftex.def)             Requested size: 472.03123pt x 378.79977pt.
+<usecase23.png, id=53, 539.76656pt x 606.76688pt>
+File: usecase23.png Graphic file (type png)
+<use usecase23.png>
+Package pdftex.def Info: usecase23.png  used on input line 213.
+(pdftex.def)             Requested size: 472.03123pt x 530.6327pt.
+ [8 <./usecase2.png> <./usecase21.png>] [9 <./usecase22.png>]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 241.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 241.
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 241--241
+ [] 
+ []
+
+[10 <./usecase23.png>]
+Overfull \hbox (12.0pt too wide) in paragraph at lines 263--263
+ [] 
+ []
+
+[11]
+Overfull \hbox (12.0pt too wide) in paragraph at lines 285--285
+ [] 
+ []
+
+[12]
+Overfull \hbox (12.0pt too wide) in paragraph at lines 306--306
+ [] 
+ []
+
+[13]
+Overfull \hbox (12.0pt too wide) in paragraph at lines 325--325
+ [] 
+ []
+
+[14]
+Overfull \hbox (12.0pt too wide) in paragraph at lines 344--344
+ [] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 363--363
+ [] 
+ []
+
+[15]
+Overfull \hbox (12.0pt too wide) in paragraph at lines 382--382
+ [] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 401--401
+ [] 
+ []
+
+[16]
+Overfull \hbox (12.0pt too wide) in paragraph at lines 421--421
+ [] 
+ []
+
+[17]
+Overfull \hbox (12.0pt too wide) in paragraph at lines 427--429
+ [] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 431--433
+ [] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 435--437
+ [] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 439--441
+ [] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 443--445
+ [] 
+ []
+
+[18]
+Overfull \hbox (12.0pt too wide) in paragraph at lines 447--449
+ [] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 451--453
+ [] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 455--457
+ [] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 459--461
+ [] 
+ []
+
+<Diagrama.png, id=94, 942.52126pt x 744.53156pt>
+File: Diagrama.png Graphic file (type png)
+<use Diagrama.png>
+Package pdftex.def Info: Diagrama.png  used on input line 467.
+(pdftex.def)             Requested size: 472.03123pt x 372.87834pt.
+[19]
+<vcp_adicionarmembros.png, id=98, 777.65532pt x 627.84563pt>
+File: vcp_adicionarmembros.png Graphic file (type png)
+<use vcp_adicionarmembros.png>
+Package pdftex.def Info: vcp_adicionarmembros.png  used on input line 473.
+(pdftex.def)             Requested size: 472.03123pt x 381.10756pt.
+<vcp_criargrupo.png, id=99, 765.6103pt x 545.78906pt>
+File: vcp_criargrupo.png Graphic file (type png)
+<use vcp_criargrupo.png>
+Package pdftex.def Info: vcp_criargrupo.png  used on input line 474.
+(pdftex.def)             Requested size: 472.03123pt x 336.50357pt.
+ [20 <./Diagrama.png>]
+<vcp_editarevento.png, id=104, 721.19438pt x 501.37312pt>
+File: vcp_editarevento.png Graphic file (type png)
+<use vcp_editarevento.png>
+Package pdftex.def Info: vcp_editarevento.png  used on input line 475.
+(pdftex.def)             Requested size: 472.03123pt x 328.15315pt.
+ [21 <./vcp_adicionarmembros.png>]
+<vcp_excluircategoria.png, id=109, 685.05937pt x 715.17188pt>
+File: vcp_excluircategoria.png Graphic file (type png)
+<use vcp_excluircategoria.png>
+Package pdftex.def Info: vcp_excluircategoria.png  used on input line 476.
+(pdftex.def)             Requested size: 472.03123pt x 492.79254pt.
+ [22 <./vcp_criargrupo.png>]
+<vcp_excluirgrupo.png, id=114, 566.115pt x 551.05875pt>
+File: vcp_excluirgrupo.png Graphic file (type png)
+<use vcp_excluirgrupo.png>
+Package pdftex.def Info: vcp_excluirgrupo.png  used on input line 477.
+(pdftex.def)             Requested size: 472.03123pt x 459.48917pt.
+ [23 <./vcp_editarevento.png>]
+<vcp_participarevento.png, id=119, 720.44156pt x 503.63156pt>
+File: vcp_participarevento.png Graphic file (type png)
+<use vcp_participarevento.png>
+Package pdftex.def Info: vcp_participarevento.png  used on input line 478.
+(pdftex.def)             Requested size: 472.03123pt x 329.97714pt.
+ [24 <./vcp_excluircategoria.png>]
+<vcp_postar.png, id=125, 837.1275pt x 505.89pt>
+File: vcp_postar.png Graphic file (type png)
+<use vcp_postar.png>
+Package pdftex.def Info: vcp_postar.png  used on input line 479.
+(pdftex.def)             Requested size: 472.03123pt x 285.24942pt.
+
+[25 <./vcp_excluirgrupo.png>]
+<vpc_divulgarevento.png, id=130, 630.85687pt x 433.62pt>
+File: vpc_divulgarevento.png Graphic file (type png)
+<use vpc_divulgarevento.png>
+Package pdftex.def Info: vpc_divulgarevento.png  used on input line 480.
+(pdftex.def)             Requested size: 472.03123pt x 324.45331pt.
+ [26 <./vcp_participarevento.png>] [27 <./vcp_postar.png>] [28 <./vpc_divulgare
+vento.png>]
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 514--514
+ [] 
+ []
+
+
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 534--534
+ [] 
+ []
+
+
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 555--555
+ [] 
+ []
+
+
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 573--573
+ [] 
+ []
+
+[29]
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 589--589
+ [] 
+ []
+
+
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 605--605
+ [] 
+ []
+
+
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 625--625
+ [] 
+ []
+
+
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 649--649
+ [] 
+ []
+
+
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 672--672
+ [] 
+ []
+
+[30]
+<com_criargrupo1.png, id=150, 721.19438pt x 563.85657pt>
+File: com_criargrupo1.png Graphic file (type png)
+<use com_criargrupo1.png>
+Package pdftex.def Info: com_criargrupo1.png  used on input line 678.
+(pdftex.def)             Requested size: 472.03123pt x 369.04913pt.
+<com_excluirCategoria1.png, id=151, 1100.61188pt x 501.37312pt>
+File: com_excluirCategoria1.png Graphic file (type png)
+<use com_excluirCategoria1.png>
+Package pdftex.def Info: com_excluirCategoria1.png  used on input line 679.
+(pdftex.def)             Requested size: 472.03123pt x 215.02776pt.
+ [31]
+<seq_adicionarmembros1.png, id=155, 1326.45563pt x 635.37375pt>
+File: seq_adicionarmembros1.png Graphic file (type png)
+<use seq_adicionarmembros1.png>
+Package pdftex.def Info: seq_adicionarmembros1.png  used on input line 680.
+(pdftex.def)             Requested size: 472.03123pt x 226.09732pt.
+ [32 <./com_criargrupo1.png>]
+<seq_excluirgrupo1.png, id=160, 798.73407pt x 504.38437pt>
+File: seq_excluirgrupo1.png Graphic file (type png)
+<use seq_excluirgrupo1.png>
+Package pdftex.def Info: seq_excluirgrupo1.png  used on input line 681.
+(pdftex.def)             Requested size: 472.03123pt x 298.07675pt.
+ [33 <./com_excluirCategoria1.png> <./seq_adicionarmembros1.png>]
+<com_divulgarevento2.png, id=166, 662.475pt x 501.37312pt>
+File: com_divulgarevento2.png Graphic file (type png)
+<use com_divulgarevento2.png>
+Package pdftex.def Info: com_divulgarevento2.png  used on input line 683.
+(pdftex.def)             Requested size: 472.03123pt x 357.2397pt.
+<seq_divulgarevento2.png, id=167, 889.82437pt x 504.38437pt>
+File: seq_divulgarevento2.png Graphic file (type png)
+<use seq_divulgarevento2.png>
+Package pdftex.def Info: seq_divulgarevento2.png  used on input line 684.
+(pdftex.def)             Requested size: 472.03123pt x 267.56102pt.
+ [34 <./seq_excluirgrupo1.png>] [35 <./com_divulgarevento2.png>]
+<com_editarevento2.png, id=176, 662.475pt x 504.38437pt>
+File: com_editarevento2.png Graphic file (type png)
+<use com_editarevento2.png>
+Package pdftex.def Info: com_editarevento2.png  used on input line 686.
+(pdftex.def)             Requested size: 472.03123pt x 359.38528pt.
+<seq_editarevento2.png, id=177, 1264.725pt x 516.42938pt>
+File: seq_editarevento2.png Graphic file (type png)
+<use seq_editarevento2.png>
+Package pdftex.def Info: seq_editarevento2.png  used on input line 687.
+(pdftex.def)             Requested size: 472.03123pt x 192.74644pt.
+ [36 <./seq_divulgarevento2.png>]
+<com_participarevento2.png, id=183, 662.475pt x 581.17125pt>
+File: com_participarevento2.png Graphic file (type png)
+<use com_participarevento2.png>
+Package pdftex.def Info: com_participarevento2.png  used on input line 689.
+(pdftex.def)             Requested size: 472.03123pt x 414.09769pt.
+<seq_participarevento2.png, id=184, 810.77907pt x 427.5975pt>
+File: seq_participarevento2.png Graphic file (type png)
+<use seq_participarevento2.png>
+Package pdftex.def Info: seq_participarevento2.png  used on input line 690.
+(pdftex.def)             Requested size: 472.03123pt x 248.95279pt.
+ [37 <./com_editarevento2.png> <./seq_editarevento2.png>] [38 <./com_participar
+evento2.png>]
+<com_postar2.png, id=194, 704.6325pt x 594.72188pt>
+File: com_postar2.png Graphic file (type png)
+<use com_postar2.png>
+Package pdftex.def Info: com_postar2.png  used on input line 692.
+(pdftex.def)             Requested size: 472.03123pt x 398.39807pt.
+<seq_postar2.png, id=195, 1105.88156pt x 692.5875pt>
+File: seq_postar2.png Graphic file (type png)
+<use seq_postar2.png>
+Package pdftex.def Info: seq_postar2.png  used on input line 693.
+(pdftex.def)             Requested size: 472.03123pt x 295.61923pt.
+ [39 <./seq_participarevento2.png>] [40 <./com_postar2.png>] [41 <./seq_postar2
+.png>]
+(projeto_modelagem.aux) ) 
+Here is how much of TeX's memory you used:
+ 3949 strings out of 492973
+ 57516 string characters out of 3126692
+ 147137 words of memory out of 3000000
+ 7739 multiletter control sequences out of 15000+200000
+ 5825 words of font info for 21 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,9n,35p,419b,353s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/Pablo/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Pablo/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Pablo/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Pablo/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/
+Users/Pablo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb>
+Output written on projeto_modelagem.pdf (42 pages, 1308394 bytes).
+PDF statistics:
+ 227 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
+
