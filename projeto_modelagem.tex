@@ -214,9 +214,9 @@ Os casos de uso foram feitos com base no recursos essenciais do sistema, o diagr
 	
 \textcolor{red}{
 	Como pode ser visto, também foi removido o ator sistema de notificação pois ele não precisa ser representado como ator para entender o funcionamento do sistema.
-
-Alguns casos de uso estão documentados usando uma descrição numerada extendida com grau de detalhamento essencial, isso tudo está descrito abaixo:
+	Alguns casos de uso estão documentados usando uma descrição numerada extendida com grau de detalhamento essencial, isso tudo está descrito abaixo:
 } 
+
 \textcolor{red}{
 \begin{casosdeuso}{Divulgar evento}
  \sumario{Usuário cadastra um novo evento ao sistema.}
@@ -462,7 +462,8 @@ Ao excluir um Anúncio de qualquer tipo, o dono deverá ser notificado. Se o tip
 
 	\section{Classes de domínio} \bigskip
 \textcolor{red}{As classes de domínio do sistema foram feitas com base nos casos de uso e para suportar as regras de negócio. 
-Foram removidas diversas coisas e alteradas durante o novo ciclo de analise. O diagrama pode ser visto na figura \ref{fig:Diagrama}}.
+Foram removidas diversas coisas e alteradas durante o novo ciclo de analise. O diagrama pode ser visto na figura \ref{fig:Diagrama}
+}.
  
 \diagrama{Diagrama}{Diagrama de classes do sistema.} 
 
@@ -692,21 +693,67 @@ Para os 8 casos de uso escolhidos para as VCPS também foram feitos os diagramas
 \diagrama{com_postar2}{Diagrama de comunicação do caso de uso postar}
 \diagrama{seq_postar2}{Diagrama de sequencia do caso de uso postar}
 
+\section{Diagrama de classes de Projeto}
+Passando a fase de analise, temos a agora a fase de projeto, com novos diagramas. O diagrama de classes de projeto mudou muito em relação ao anterior, principalmente pelo uso de classes parametrizadas e navegabilidade. Nesse diagrama foi corrigida a presença da classe estabelecimento e surgiram classes que tinham aparecido na primeira fase no projeto de modelagem - causado por falhas na interpretação.
+
+\diagrama{classes_projeto}{Diagrama de classes de projeto}
+
+
+\diagrama{vcp_adicionarmembrosp}{VCP para o caso de uso adicionar membros.}
+\diagrama{vcp_criargrupop}{VCP para o caso de uso criar grupo}
+\diagrama{vcp_editareventop}{VCP para o caso de uso editar evento.}
+\diagrama{vcp_excluircategoriap}{VCP para o caso de uso excluir categoria.}
+\diagrama{vcp_excluirgrupop}{VCP para o caso de uso excluir grupo.}
+\diagrama{vcp_participareventop}{VCP para o caso de uso participar evento.}
+\diagrama{vcp_postarp}{VCP para o caso de uso postar.}
+\diagrama{vpc_divulgareventop}{VCP para o caso de uso divulgar evento.}
+
+
+
 \section{Glossário de conceitos}
     
 \begin{enumerate}[label=\textbf{\arabic*}]
-\item \textbf{Usuário:} usuário do aplicativo.
 \item \textbf{Anúncio:} divulgação de evento ou estabelecimento.
-\item \textbf{Evento:} tipo de divulgação permitida.
-\item \textbf{Local:} Endereço de um lugar.
-\item \textbf{Data:} dia, mês e ano de um acontecimento.
-\item \textbf{Horário:} horas e minutos de um acontecimento.
+\item \textbf{Evento:} show, festas, encontros, etc.
 \item \textbf{Estabelecimento:} comercio, instituição ou outro tipo de entidade que pode reunir pessoas.
-\item \textbf{Categoria:} Forma de rotular os anúncios para o usuário.
-\item \textbf{Agenda:} Tela que reúne o conjunto de eventos que o usuário quer participar em cada data.
-\item \textbf{Grupo:} Ferramenta que reúne usuários para compartilhar anúncios de determinadas categorias.
-\item \textbf{Membro:} usuário que pertence a algum grupo.
 \item \textbf{Postagem:} Anúncio com texto compartilhado em um grupo.
 \item \textbf{Denúncia:} Relato de abuso feito por um usuário para um anúncio.
+\item \textbf{Set:} Conjunto sem ordem de valores.
+\item \textbf{OrderedSet:} Conjunto ordenado de valores.
+\item \textbf{Preferencias:} Conjunto de valor que alteram o comportamento de um grupo.
+\item \textbf{Post/Postagem:} Compartilhamento de um anúncio por meio de um grupo.
 \end{enumerate}
+
+\section{Registro de mudanças}
+
+\begin{center}
+ \begin{tabular}{|p{0.5\linewidth}|}
+  \hline
+  [12/10] Alterada associação de usuário como anunciante em Anúncio.\\ 
+  \hline
+  [12/10] Removida classe Admin.\\
+  \hline
+  [12/10] Adicionadas categorias favoritas em usuário.\\
+  \hline
+  [03/11] Remoção de agregações desnecessárias. \\
+  \hline
+  [03/11] Classe membro removida. \\
+  \hline
+  [03/11] Casos de uso divididos em pacotes. \\
+  \hline
+  [04/11] Algumas descrições de casos de uso alteradas. \\
+  \hline
+  [05/11] Atualização da descrição de todos os casos de uso. \\
+  \hline
+  [05/11] Regra de negocio RN06. \\
+  \hline
+  [05/11] Atualização de todas as responsabilidades. \\
+  \hline
+  [06/11] Feitos diagramas de interação. \\
+  \hline
+  [07/11] Feitas classes de projeto e VCP'S \\
+  \hline
+ \end{tabular} 
+\end{center}
+
 \end{document}

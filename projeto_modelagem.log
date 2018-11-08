@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.8.15)  7 NOV 2018 08:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.8.15)  7 NOV 2018 20:05
 entering extended mode
 **./projeto_modelagem.tex
 (projeto_modelagem.tex
@@ -496,99 +496,99 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 459--461
 <Diagrama.png, id=94, 942.52126pt x 744.53156pt>
 File: Diagrama.png Graphic file (type png)
 <use Diagrama.png>
-Package pdftex.def Info: Diagrama.png  used on input line 467.
+Package pdftex.def Info: Diagrama.png  used on input line 468.
 (pdftex.def)             Requested size: 472.03123pt x 372.87834pt.
 [19]
 <vcp_adicionarmembros.png, id=98, 777.65532pt x 627.84563pt>
 File: vcp_adicionarmembros.png Graphic file (type png)
 <use vcp_adicionarmembros.png>
-Package pdftex.def Info: vcp_adicionarmembros.png  used on input line 473.
+Package pdftex.def Info: vcp_adicionarmembros.png  used on input line 474.
 (pdftex.def)             Requested size: 472.03123pt x 381.10756pt.
 <vcp_criargrupo.png, id=99, 765.6103pt x 545.78906pt>
 File: vcp_criargrupo.png Graphic file (type png)
 <use vcp_criargrupo.png>
-Package pdftex.def Info: vcp_criargrupo.png  used on input line 474.
+Package pdftex.def Info: vcp_criargrupo.png  used on input line 475.
 (pdftex.def)             Requested size: 472.03123pt x 336.50357pt.
  [20 <./Diagrama.png>]
 <vcp_editarevento.png, id=104, 721.19438pt x 501.37312pt>
 File: vcp_editarevento.png Graphic file (type png)
 <use vcp_editarevento.png>
-Package pdftex.def Info: vcp_editarevento.png  used on input line 475.
+Package pdftex.def Info: vcp_editarevento.png  used on input line 476.
 (pdftex.def)             Requested size: 472.03123pt x 328.15315pt.
  [21 <./vcp_adicionarmembros.png>]
 <vcp_excluircategoria.png, id=109, 685.05937pt x 715.17188pt>
 File: vcp_excluircategoria.png Graphic file (type png)
 <use vcp_excluircategoria.png>
-Package pdftex.def Info: vcp_excluircategoria.png  used on input line 476.
+Package pdftex.def Info: vcp_excluircategoria.png  used on input line 477.
 (pdftex.def)             Requested size: 472.03123pt x 492.79254pt.
  [22 <./vcp_criargrupo.png>]
 <vcp_excluirgrupo.png, id=114, 566.115pt x 551.05875pt>
 File: vcp_excluirgrupo.png Graphic file (type png)
 <use vcp_excluirgrupo.png>
-Package pdftex.def Info: vcp_excluirgrupo.png  used on input line 477.
+Package pdftex.def Info: vcp_excluirgrupo.png  used on input line 478.
 (pdftex.def)             Requested size: 472.03123pt x 459.48917pt.
  [23 <./vcp_editarevento.png>]
 <vcp_participarevento.png, id=119, 720.44156pt x 503.63156pt>
 File: vcp_participarevento.png Graphic file (type png)
 <use vcp_participarevento.png>
-Package pdftex.def Info: vcp_participarevento.png  used on input line 478.
+Package pdftex.def Info: vcp_participarevento.png  used on input line 479.
 (pdftex.def)             Requested size: 472.03123pt x 329.97714pt.
  [24 <./vcp_excluircategoria.png>]
 <vcp_postar.png, id=125, 837.1275pt x 505.89pt>
 File: vcp_postar.png Graphic file (type png)
 <use vcp_postar.png>
-Package pdftex.def Info: vcp_postar.png  used on input line 479.
+Package pdftex.def Info: vcp_postar.png  used on input line 480.
 (pdftex.def)             Requested size: 472.03123pt x 285.24942pt.
 
 [25 <./vcp_excluirgrupo.png>]
 <vpc_divulgarevento.png, id=130, 630.85687pt x 433.62pt>
 File: vpc_divulgarevento.png Graphic file (type png)
 <use vpc_divulgarevento.png>
-Package pdftex.def Info: vpc_divulgarevento.png  used on input line 480.
+Package pdftex.def Info: vpc_divulgarevento.png  used on input line 481.
 (pdftex.def)             Requested size: 472.03123pt x 324.45331pt.
  [26 <./vcp_participarevento.png>] [27 <./vcp_postar.png>] [28 <./vpc_divulgare
 vento.png>]
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 514--514
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 515--515
  [] 
  []
 
 
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 534--534
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 535--535
  [] 
  []
 
 
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 555--555
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 556--556
  [] 
  []
 
 
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 573--573
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 574--574
  [] 
  []
 
 [29]
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 589--589
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 590--590
  [] 
  []
 
 
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 605--605
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 606--606
  [] 
  []
 
 
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 625--625
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 626--626
  [] 
  []
 
 
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 649--649
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 650--650
  [] 
  []
 
 
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 672--672
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 673--673
  [] 
  []
 
@@ -596,91 +596,147 @@ Overfull \hbox (23.99998pt too wide) in paragraph at lines 672--672
 <com_criargrupo1.png, id=150, 721.19438pt x 563.85657pt>
 File: com_criargrupo1.png Graphic file (type png)
 <use com_criargrupo1.png>
-Package pdftex.def Info: com_criargrupo1.png  used on input line 678.
+Package pdftex.def Info: com_criargrupo1.png  used on input line 679.
 (pdftex.def)             Requested size: 472.03123pt x 369.04913pt.
 <com_excluirCategoria1.png, id=151, 1100.61188pt x 501.37312pt>
 File: com_excluirCategoria1.png Graphic file (type png)
 <use com_excluirCategoria1.png>
-Package pdftex.def Info: com_excluirCategoria1.png  used on input line 679.
+Package pdftex.def Info: com_excluirCategoria1.png  used on input line 680.
 (pdftex.def)             Requested size: 472.03123pt x 215.02776pt.
  [31]
 <seq_adicionarmembros1.png, id=155, 1326.45563pt x 635.37375pt>
 File: seq_adicionarmembros1.png Graphic file (type png)
 <use seq_adicionarmembros1.png>
-Package pdftex.def Info: seq_adicionarmembros1.png  used on input line 680.
+Package pdftex.def Info: seq_adicionarmembros1.png  used on input line 681.
 (pdftex.def)             Requested size: 472.03123pt x 226.09732pt.
  [32 <./com_criargrupo1.png>]
 <seq_excluirgrupo1.png, id=160, 798.73407pt x 504.38437pt>
 File: seq_excluirgrupo1.png Graphic file (type png)
 <use seq_excluirgrupo1.png>
-Package pdftex.def Info: seq_excluirgrupo1.png  used on input line 681.
+Package pdftex.def Info: seq_excluirgrupo1.png  used on input line 682.
 (pdftex.def)             Requested size: 472.03123pt x 298.07675pt.
  [33 <./com_excluirCategoria1.png> <./seq_adicionarmembros1.png>]
 <com_divulgarevento2.png, id=166, 662.475pt x 501.37312pt>
 File: com_divulgarevento2.png Graphic file (type png)
 <use com_divulgarevento2.png>
-Package pdftex.def Info: com_divulgarevento2.png  used on input line 683.
+Package pdftex.def Info: com_divulgarevento2.png  used on input line 684.
 (pdftex.def)             Requested size: 472.03123pt x 357.2397pt.
 <seq_divulgarevento2.png, id=167, 889.82437pt x 504.38437pt>
 File: seq_divulgarevento2.png Graphic file (type png)
 <use seq_divulgarevento2.png>
-Package pdftex.def Info: seq_divulgarevento2.png  used on input line 684.
+Package pdftex.def Info: seq_divulgarevento2.png  used on input line 685.
 (pdftex.def)             Requested size: 472.03123pt x 267.56102pt.
  [34 <./seq_excluirgrupo1.png>] [35 <./com_divulgarevento2.png>]
 <com_editarevento2.png, id=176, 662.475pt x 504.38437pt>
 File: com_editarevento2.png Graphic file (type png)
 <use com_editarevento2.png>
-Package pdftex.def Info: com_editarevento2.png  used on input line 686.
+Package pdftex.def Info: com_editarevento2.png  used on input line 687.
 (pdftex.def)             Requested size: 472.03123pt x 359.38528pt.
 <seq_editarevento2.png, id=177, 1264.725pt x 516.42938pt>
 File: seq_editarevento2.png Graphic file (type png)
 <use seq_editarevento2.png>
-Package pdftex.def Info: seq_editarevento2.png  used on input line 687.
+Package pdftex.def Info: seq_editarevento2.png  used on input line 688.
 (pdftex.def)             Requested size: 472.03123pt x 192.74644pt.
  [36 <./seq_divulgarevento2.png>]
 <com_participarevento2.png, id=183, 662.475pt x 581.17125pt>
 File: com_participarevento2.png Graphic file (type png)
 <use com_participarevento2.png>
-Package pdftex.def Info: com_participarevento2.png  used on input line 689.
+Package pdftex.def Info: com_participarevento2.png  used on input line 690.
 (pdftex.def)             Requested size: 472.03123pt x 414.09769pt.
 <seq_participarevento2.png, id=184, 810.77907pt x 427.5975pt>
 File: seq_participarevento2.png Graphic file (type png)
 <use seq_participarevento2.png>
-Package pdftex.def Info: seq_participarevento2.png  used on input line 690.
+Package pdftex.def Info: seq_participarevento2.png  used on input line 691.
 (pdftex.def)             Requested size: 472.03123pt x 248.95279pt.
  [37 <./com_editarevento2.png> <./seq_editarevento2.png>] [38 <./com_participar
 evento2.png>]
 <com_postar2.png, id=194, 704.6325pt x 594.72188pt>
 File: com_postar2.png Graphic file (type png)
 <use com_postar2.png>
-Package pdftex.def Info: com_postar2.png  used on input line 692.
+Package pdftex.def Info: com_postar2.png  used on input line 693.
 (pdftex.def)             Requested size: 472.03123pt x 398.39807pt.
 <seq_postar2.png, id=195, 1105.88156pt x 692.5875pt>
 File: seq_postar2.png Graphic file (type png)
 <use seq_postar2.png>
-Package pdftex.def Info: seq_postar2.png  used on input line 693.
+Package pdftex.def Info: seq_postar2.png  used on input line 694.
 (pdftex.def)             Requested size: 472.03123pt x 295.61923pt.
- [39 <./seq_participarevento2.png>] [40 <./com_postar2.png>] [41 <./seq_postar2
-.png>]
-(projeto_modelagem.aux) ) 
+ [39 <./seq_participarevento2.png>] [40 <./com_postar2.png>]
+<classes_projeto.png, id=204, 1574.88374pt x 1093.83656pt>
+File: classes_projeto.png Graphic file (type png)
+<use classes_projeto.png>
+Package pdftex.def Info: classes_projeto.png  used on input line 699.
+(pdftex.def)             Requested size: 472.03123pt x 327.83638pt.
+ [41 <./seq_postar2.png>]
+<vcp_adicionarmembrosp.png, id=209, 1066.7353pt x 651.18282pt>
+File: vcp_adicionarmembrosp.png Graphic file (type png)
+<use vcp_adicionarmembrosp.png>
+Package pdftex.def Info: vcp_adicionarmembrosp.png  used on input line 702.
+(pdftex.def)             Requested size: 472.03123pt x 288.15086pt.
+<vcp_criargrupop.png, id=210, 1102.1175pt x 675.27281pt>
+File: vcp_criargrupop.png Graphic file (type png)
+<use vcp_criargrupop.png>
+Package pdftex.def Info: vcp_criargrupop.png  used on input line 703.
+(pdftex.def)             Requested size: 472.03123pt x 289.21793pt.
+ [42 <./classes_projeto.png>]
+<vcp_editareventop.png, id=216, 771.63281pt x 626.34pt>
+File: vcp_editareventop.png Graphic file (type png)
+<use vcp_editareventop.png>
+Package pdftex.def Info: vcp_editareventop.png  used on input line 704.
+(pdftex.def)             Requested size: 472.03123pt x 383.14679pt.
+ [43 <./vcp_adicionarmembrosp.png>]
+<vcp_excluircategoriap.png, id=221, 1111.15125pt x 823.57687pt>
+File: vcp_excluircategoriap.png Graphic file (type png)
+<use vcp_excluircategoriap.png>
+Package pdftex.def Info: vcp_excluircategoriap.png  used on input line 705.
+(pdftex.def)             Requested size: 472.03123pt x 349.87102pt.
+ [44 <./vcp_criargrupop.png>]
+<vcp_excluirgrupop.png, id=226, 820.56563pt x 594.72188pt>
+File: vcp_excluirgrupop.png Graphic file (type png)
+<use vcp_excluirgrupop.png>
+Package pdftex.def Info: vcp_excluirgrupop.png  used on input line 706.
+(pdftex.def)             Requested size: 472.03123pt x 342.10762pt.
+
+[45 <./vcp_editareventop.png>]
+<vcp_participareventop.png, id=231, 732.48656pt x 545.03625pt>
+File: vcp_participareventop.png Graphic file (type png)
+<use vcp_participareventop.png>
+Package pdftex.def Info: vcp_participareventop.png  used on input line 707.
+(pdftex.def)             Requested size: 472.03123pt x 351.23383pt.
+ [46 <./vcp_excluircategoriap.png>]
+<vcp_postarp.png, id=236, 769.37437pt x 645.91313pt>
+File: vcp_postarp.png Graphic file (type png)
+<use vcp_postarp.png>
+Package pdftex.def Info: vcp_postarp.png  used on input line 708.
+(pdftex.def)             Requested size: 472.03123pt x 396.29298pt.
+ [47 <./vcp_excluirgrupop.png>]
+<vpc_divulgareventop.png, id=241, 837.1275pt x 520.94624pt>
+File: vpc_divulgareventop.png Graphic file (type png)
+<use vpc_divulgareventop.png>
+Package pdftex.def Info: vpc_divulgareventop.png  used on input line 709.
+(pdftex.def)             Requested size: 472.03123pt x 293.739pt.
+ [48 <./vcp_participareventop.png>] [49 <./vcp_postarp.png>]
+[50 <./vpc_divulgareventop.png>] [51] (projeto_modelagem.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3949 strings out of 492973
- 57516 string characters out of 3126692
- 147137 words of memory out of 3000000
- 7739 multiletter control sequences out of 15000+200000
+ 4003 strings out of 492973
+ 58863 string characters out of 3126692
+ 147227 words of memory out of 3000000
+ 7784 multiletter control sequences out of 15000+200000
  5825 words of font info for 21 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,35p,419b,353s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/Pablo/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Pablo/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Pablo/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Pablo/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/
-Users/Pablo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb>
-Output written on projeto_modelagem.pdf (42 pages, 1308394 bytes).
+ 41i,9n,35p,444b,353s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/Pablo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb><C:/Users/Pablo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmbx12.pfb><C:/Users/Pablo/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Pablo/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Pablo/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on projeto_modelagem.pdf (52 pages, 1924861 bytes).
 PDF statistics:
- 227 PDF objects out of 1000 (max. 8388607)
+ 277 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 171 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 216 words of extra memory for PDF output out of 10000 (max. 10000000)
 
