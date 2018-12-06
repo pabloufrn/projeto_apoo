@@ -204,20 +204,26 @@ Os casos de uso foram feitos com base no recursos essenciais do sistema, o diagr
 \diagrama{usecase}{Diagrama de casos de uso.}
 \pagebreak
 
-\textcolor{red}{
+
 	Contudo, com o surgimento de dificuldades ao modelar as VCP's do diagrama de classes, o diagrama de casos de uso sofreu alterações. Além disso, devido ao aumento na divisão dos casos de uso, o sistema foi dividido em três pacotes, como pode ser visto nas figura \ref{fig:usecase2}.
-}
+
 	\diagrama{usecase2}{Diagrama de casos de uso melhorado.}
-	\diagrama{usecase21}{Diagrama do modulo principal.}
+	\diagrama{usecase21}{\textcolor{red}{Diagrama do modulo principal.}}
+	\begin{center}
+ \begin{tabular}{|p{0.5\linewidth}|}
+  \hline
+  	Adicionado caso de uso banir usuário. \\ 
+  \hline
+ \end{tabular} 
+\end{center}
 	\diagrama{usecase22}{Diagrama do modulo de divulgador.}
 	\diagrama{usecase23}{Diagrama do modulo de grupos.}
 	
-\textcolor{red}{
 	Como pode ser visto, também foi removido o ator sistema de notificação pois ele não precisa ser representado como ator para entender o funcionamento do sistema.
 	Alguns casos de uso estão documentados usando uma descrição numerada extendida com grau de detalhamento essencial, isso tudo está descrito abaixo:
-} 
 
-\textcolor{red}{
+
+
 \begin{casosdeuso}{Divulgar evento}
  \sumario{Usuário cadastra um novo evento ao sistema.}
  \ator{Divulgador.}
@@ -238,9 +244,9 @@ Os casos de uso foram feitos com base no recursos essenciais do sistema, o diagr
 \begin{fluxoe}{3}{Violação de RN04}
  \item Em caso de violação de RN04, o sistema irá alertar o usuário e interromper a operação. \end{fluxoe}
 \end{casosdeuso}
-}
 
-\textcolor{red}{
+
+
 \begin{casosdeuso}{Adicionar membros}
  \sumario{O administrador do grupo coloca mais pessoas para participar dele.}
  \ator{Administrador de grupos.}
@@ -260,9 +266,9 @@ Os casos de uso foram feitos com base no recursos essenciais do sistema, o diagr
  \item Se o membro já pertence ao grupo, o sistema notificará ao usuário. 
 \end{fluxoe}
 \end{casosdeuso}
-}
 
-\textcolor{red}{
+
+
 \begin{casosdeuso}{Editar evento}
  \sumario{Usuário altera as informações de um evento.}
  \ator{Divulgador.}
@@ -282,9 +288,8 @@ Os casos de uso foram feitos com base no recursos essenciais do sistema, o diagr
  \item Conforme RN01, os usuário que marcaram participação serão notificados da alteração.
 \end{fluxoa}
 \end{casosdeuso}
-}
 
-\textcolor{red}{
+
 \begin{casosdeuso}{Participar de  eventos}
  \sumario{Usuário visualiza eventos próximos a ele.}
  \ator{Usuário procurando eventos.}
@@ -295,18 +300,17 @@ Os casos de uso foram feitos com base no recursos essenciais do sistema, o diagr
  \item Sistema exibe os eventos próximos.
  \item Usuário escolhe um dos eventos.
  \item Sistema exibe informações sobre o evento.
- \item Usuário decide se vai participar do evento.
- \item Sistema cadastra participação no evento, se o usuário desejar, e o caso de uso termina.
+ \item{\textcolor{red}{Usuário coloca o tipo de interesse no evento (irei, interessado, etc)}.}
+ \item Sistema cadastra participação no evento e o caso de uso termina.
  \end{enumerate}
  \begin{fluxoe}{4}{Usuário já participa de evento}
  \item Se o usuário já estiver participando, o botão de participação aparecerá diferenciado.
- \item Se o usuário clicar no botão de participação nessa condição, o sistema irá perguntar se ele deseja cancelar a participação no evento.
+ \item{\textcolor{red}{Se o usuário clicar no botão de participação nessa condição, o sistema irá perguntar tipo de interesse no evento.}}
  \end{fluxoe} 
 \end{casosdeuso}
-}
 
 
-\textcolor{red}{
+
 \begin{casosdeuso}{Ver agenda}
  \sumario{Usuário visualiza agenda mensal com eventos marcados.}
  \ator{Usuário procurando eventos.}
@@ -322,9 +326,9 @@ Os casos de uso foram feitos com base no recursos essenciais do sistema, o diagr
  \item Usuário voltar e o caso de uso voltar para o item 4 ou o caso de uso termina
 \end{enumerate}
 \end{casosdeuso}
-}
 
-\textcolor{red}{
+
+
 \begin{casosdeuso}{Criar grupo}
  \sumario{Usuário cria um grupo para compartilhar eventos}
  \ator{Dono de grupo}
@@ -341,9 +345,9 @@ Os casos de uso foram feitos com base no recursos essenciais do sistema, o diagr
  \item Sistema cadastra o grupo e notifica os todos os membros e o caso de uso termina.
 \end{enumerate}
 \end{casosdeuso}
-}
 
-\textcolor{red}{
+
+
 \begin{casosdeuso}{Excluir grupo}
  \sumario{Usuário deleta grupo.}
  \ator{Dono de grupo.}
@@ -360,9 +364,9 @@ Os casos de uso foram feitos com base no recursos essenciais do sistema, o diagr
  \item Sistema remove o grupo e todos as postagens, notifica todos os membros e o caso de uso termina.
 \end{enumerate}
 \end{casosdeuso}
-} 
+
  
-\textcolor{red}{
+
 \begin{casosdeuso}{Excluir categoria}
  \sumario{Administrador do sistema excluí uma categoria.}
  \ator{Administrador do sistema.}
@@ -379,9 +383,9 @@ Os casos de uso foram feitos com base no recursos essenciais do sistema, o diagr
   \item Para cada Anuncio pertencente à categoria antiga, o sistema substituirá para a categoria nova.
   \end{fluxoa}
 \end{casosdeuso}
-}
 
-\textcolor{red}{
+
+
 \begin{casosdeuso}{Postar}
  \sumario{Membro cria postagem mostrando um evento.}
  \ator{Membro do grupo.}
@@ -398,9 +402,9 @@ Os casos de uso foram feitos com base no recursos essenciais do sistema, o diagr
  \item Sistema cria postagem nos grupos selecionados, notifica seus respectivos membros e o caso de uso termina.
 \end{enumerate}
 \end{casosdeuso}
-}
 
-\textcolor{red}{
+
+
 \begin{casosdeuso}{Excluir Anúncio}
  \sumario{Administrador do aplicativo exclui anúncio.}
  \ator{Administrador do aplicativo.}
@@ -418,7 +422,7 @@ Os casos de uso foram feitos com base no recursos essenciais do sistema, o diagr
 \item O anunciante deverá ser alertado e em caso de o anúncio ser um evento, de acordo com RN09, Todos os participantes serão notificados.
 \end{fluxoe}
 \end{casosdeuso}
-}
+
 
 \section{Regras de negócio} 
 
@@ -460,10 +464,15 @@ Ao excluir uma categoria, o administrador terá que escolher uma outra na qual t
 Ao excluir um Anúncio de qualquer tipo, o dono deverá ser notificado. Se o tipo do anúncio for um evento todos os participantes serão notificados, e as postagens feitas com o anúncio indicarão que o o evento foi excluído.
 \end{rnegocio}
 
+\textcolor{red}{
+\begin{rnegocio}{Banimento do usuário de aplicativo}
+Ao banir um usuário do aplicativo, todos os anúncios, estabelecimentos, participações em eventos e posts em grupos serão removidos e ele será tirado dos grupos em que participa.
+\end{rnegocio}
+}
+
 	\section{Classes de domínio} \bigskip
-\textcolor{red}{As classes de domínio do sistema foram feitas com base nos casos de uso e para suportar as regras de negócio. 
-Foram removidas diversas coisas e alteradas durante o novo ciclo de analise. O diagrama pode ser visto na figura \ref{fig:Diagrama}
-}.
+	As classes de domínio do sistema foram feitas com base nos casos de uso e para suportar as regras de negócio. 
+Foram removidas diversas coisas e alteradas durante o novo ciclo de analise. O diagrama pode ser visto na figura \ref{fig:Diagrama}.
  
 \diagrama{Diagrama}{Diagrama de classes do sistema.} 
 
@@ -485,7 +494,7 @@ Todos os vcp's se encontram nas imagens a seguir:
 
 As classes não foram formadas a partir da identificação dirigida ás responsabilidades, no entanto, isso ajudou na identificação ou concretização das classes. Os cartões CRC podem ser conferidos abaixo:
 
-\textcolor{red}{
+
 \begin{center}
  \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
   \hline
@@ -495,6 +504,8 @@ As classes não foram formadas a partir da identificação dirigida ás responsa
   \textbf{Responsabilidades} & \textbf{Colaboradores} \\ 
   \hline
   Saber seu nome &  Agenda \\
+  \hline 
+  Saber o estado de sua conta & EstadoConta \\
   \hline
   Manter sua agenda & Evento \\
   \hline
@@ -512,9 +523,8 @@ As classes não foram formadas a partir da identificação dirigida ás responsa
   \hline
  \end{tabular} 
 \end{center}
-}
     % ----------------------------
-\textcolor{red}{
+
     \begin{center}
    	 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
 \hline
@@ -530,12 +540,14 @@ As classes não foram formadas a partir da identificação dirigida ás responsa
   	\hline
   	Saber seu anunciante &  \\
   	\hline
+  	Substituir sua categoria & \\
+  	\hline
    	\end{tabular} 
     \end{center}
-}
+
     
      % ----------------------------
-\textcolor{red}{
+
     \begin{center}
    	 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
 \hline
@@ -547,15 +559,17 @@ As classes não foram formadas a partir da identificação dirigida ás responsa
 \hline
   	Saber sua data & Usuário \\
   	\hline
-  	Saber seu horário &  \\
+  	Saber seu horário & EstadoEvento \\
   	\hline
   	Saber seus participantes & \\
+	\hline
+	Saber seu estado & \\
   	\hline
    	\end{tabular} 
     \end{center}
-}
+
     % ----------------------------
-\textcolor{red}{
+
     \begin{center}
    	 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
 \hline
@@ -571,9 +585,9 @@ As classes não foram formadas a partir da identificação dirigida ás responsa
   	\hline
    	\end{tabular} 
     \end{center}
-}
+
     % ----------------------------
-\textcolor{red}{
+
     \begin{center}
    	 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
 \hline
@@ -587,9 +601,9 @@ As classes não foram formadas a partir da identificação dirigida ás responsa
   	\hline
    	\end{tabular} 
     \end{center}
-}
+
     % ----------------------------
-\textcolor{red}{
+
     \begin{center}
    	 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
 \hline
@@ -603,9 +617,9 @@ As classes não foram formadas a partir da identificação dirigida ás responsa
   	\hline
    	\end{tabular} 
     \end{center}
-}
+
      % ----------------------------
-\textcolor{red}{
+
     \begin{center}
    	 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
 \hline
@@ -623,9 +637,9 @@ As classes não foram formadas a partir da identificação dirigida ás responsa
   	\hline
    	\end{tabular} 
     \end{center}
-}
+
     % ----------------------------
-\textcolor{red}{
+
     \begin{center}
    	 \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
 \hline
@@ -647,9 +661,9 @@ As classes não foram formadas a partir da identificação dirigida ás responsa
   	\hline
    	\end{tabular} 
     \end{center}
-}
+
     % ----------------------------
-\textcolor{red}{
+
 \begin{center}
  \begin{tabular}{|p{0.5\linewidth}|p{0.5\linewidth}|}
   \hline
@@ -670,7 +684,7 @@ As classes não foram formadas a partir da identificação dirigida ás responsa
   \hline 
  \end{tabular} 
 \end{center}
-}
+
 
 \section{Diagramas de interação}
 
@@ -696,19 +710,47 @@ Para os 8 casos de uso escolhidos para as VCPS também foram feitos os diagramas
 \section{Diagrama de classes de Projeto}
 Passando a fase de analise, temos a agora a fase de projeto, com novos diagramas. O diagrama de classes de projeto mudou muito em relação ao anterior, principalmente pelo uso de classes parametrizadas e navegabilidade. Nesse diagrama foi corrigida a presença da classe estabelecimento e surgiram classes que tinham aparecido na primeira fase no projeto de modelagem - causado por falhas na interpretação.
 
-\diagrama{classes_projeto}{Diagrama de classes de projeto}
+\diagrama{classes_projeto}{\textcolor{red}{Diagrama de classes de projeto}}
 
+\begin{center}
+ \begin{tabular}{|p{0.5\linewidth}|}
+  \hline
+  	Trocada a associação entre agenda e evento para agenda e o conjunto participações.\\ 
+  \hline
+  	Atributos dos métodos das classes. \\
+  \hline
+	Retorno dos métodos das classes.\\
+  \hline
+	Suporte para os estados dos DTEs inclusos.\\
+  \hline
+	Suporte às operações dos diagramas de atividades.\\
+  \hline
+ \end{tabular} 
+\end{center}
 
-\diagrama{vcp_adicionarmembrosp}{VCP para o caso de uso adicionar membros.}
-\diagrama{vcp_criargrupop}{VCP para o caso de uso criar grupo}
-\diagrama{vcp_editareventop}{VCP para o caso de uso editar evento.}
-\diagrama{vcp_excluircategoriap}{VCP para o caso de uso excluir categoria.}
-\diagrama{vcp_excluirgrupop}{VCP para o caso de uso excluir grupo.}
-\diagrama{vcp_participareventop}{VCP para o caso de uso participar evento.}
-\diagrama{vcp_postarp}{VCP para o caso de uso postar.}
-\diagrama{vpc_divulgareventop}{VCP para o caso de uso divulgar evento.}
+\diagrama{vcp_adicionarmembrosp}{\textcolor{red}{VCP para o caso de uso adicionar membros.}}
+\diagrama{vcp_criargrupop}{\textcolor{red}{VCP para o caso de uso criar grupo}}
+\diagrama{vcp_editareventop}{\textcolor{red}{VCP para o caso de uso editar evento.}}
+\diagrama{vcp_excluircategoriap}{\textcolor{red}{VCP para o caso de uso excluir categoria.}}
+\diagrama{vcp_excluirgrupop}{\textcolor{red}{VCP para o caso de uso excluir grupo.}}
+\diagrama{vcp_participareventop}{\textcolor{red}{VCP para o caso de uso participar evento.}}
+\diagrama{vcp_postarp}{\textcolor{red}{VCP para o caso de uso postar.}}
+\diagrama{vpc_divulgareventop}{\textcolor{red}{VCP para o caso de uso divulgar evento.}}
 
+\section{Diagrama de transição de estados}
+O DTE possibilitou um refinamento melhor das classes de projeto, relativo a como a classes se comportam dentro do sistema. O diagrama pode ser visto nas figuras abaixo:
 
+\diagrama{dte_estabelecimento}{DTE para a classe Estabelecimento}
+\diagrama{dte_evento}{DTE para a classe Evento}
+\diagrama{dte_participacaoevento}{DTE para a classe ParticipaçãoEvento.}
+\diagrama{dte_usuario}{DTE para a classe Usuário.}
+
+\section{Diagrama de atividades}
+O DA possibilitou ter uma visão mais próxima da aplicação, em especial a aplicação das regras de negócio durante alguns procedimentos.
+\diagrama{atv_definirhorarios}{DA para o ato de definir novos horários de funcionamento para um estabelecimento.}
+\diagrama{atv_excluiranuncio}{DA para o ato de excluir um anuncio do aplicativo.}
+\diagrama{atv_banirusuario}{DA para o ato de banir um usuário do aplicativo.}
+\diagrama{atv_cadastrarevento}{DA para o ato de cadastrar um evento no aplicativo.}
 
 \section{Glossário de conceitos}
     
@@ -722,6 +764,10 @@ Passando a fase de analise, temos a agora a fase de projeto, com novos diagramas
 \item \textbf{OrderedSet:} Conjunto ordenado de valores.
 \item \textbf{Preferencias:} Conjunto de valor que alteram o comportamento de um grupo.
 \item \textbf{Post/Postagem:} Compartilhamento de um anúncio por meio de um grupo.
+\textcolor{red}{
+\item \textbf{Banimento:} Punição permanente aplicada ao usuário do aplicativo como um todo.
+\item \textbf{Grupos:} Local que usuários podem participar e compartilhar anúncios.
+}
 \end{enumerate}
 
 \section{Registro de mudanças}
@@ -751,7 +797,11 @@ Passando a fase de analise, temos a agora a fase de projeto, com novos diagramas
   \hline
   [06/11] Feitos diagramas de interação. \\
   \hline
-  [07/11] Feitas classes de projeto e VCP'S \\
+  [07/11] Feitas classes de projeto e VCP'S. \\
+  \hline
+  [04/12] Feitos diagramas de transição de estados e atividades. \\
+  \hline
+  [05/12] Feitas as atualizações dos artefatos de software. \\
   \hline
  \end{tabular} 
 \end{center}
